@@ -1,219 +1,228 @@
-# NanaTech — Simplified Smartphone Assistant for Seniors
+📚 AI-Powered Study Video Generator
+Turn your class notes into fun, animated lessons.
+📌 Overview
 
-A conversational layer that lets older adults use technology without menus, typing, or confusion.
+This project transforms real classroom materials—notes, study guides, review packets, and slides—into short, engaging cartoon-style videos designed to help students understand and retain key concepts.
 
-## 🚀 Overview
+Instead of reading through dozens of pages before a test, students get a custom AI-generated lesson crafted specifically from the material their teacher provided.
 
-Many seniors struggle with smartphones — small text, complex menus, too many apps, and physical limitations like tremors or arthritis. EASY AI replaces traditional navigation with a single AI-controlled interface powered by voice.
+🎯 Mission
 
-**Just speak. The phone does the rest.**
+Make studying more engaging, less overwhelming, and way more effective.
 
-The system supports essential daily tasks, protects users from scams, and allows family members to remotely assist when needed.
+Education often feels:
 
-## 🎯 Mission Statement
+Boring
 
-To empower seniors and individuals with physical limitations by turning modern smartphones into simple, intuitive, voice-first devices — restoring confidence, independence, and connection with family.
+Dense
 
-## 📱 Core Features (MVP)
+Hard to focus on
 
-### 1. Voice-First Control
+Time-consuming
 
-- One tap to speak, no menus
-- Large buttons, large text, high contrast
-- Spoken and on-screen confirmations
+This tool flips studying upside down by converting traditional text-based materials into a visual, story-driven learning experience.
 
-### 2. Daily Actions
+🧠 Core Idea
 
-- Send & receive texts
-- Read texts aloud
-- Make and receive calls
-- Send voice-driven emails
-- Adjust settings
-  - Volume
-  - Brightness
-  - Wi-Fi & Bluetooth toggles
+Upload any study material → Get back an animated teaching video tailored to your exam content.
 
-### 3. Helpful Navigation
+The system extracts what matters, explains it in simple terms, and delivers it like a cartoon lesson — fun, memorable, and easy to follow.
 
-- Directions
-- "Who called me?"
-- "Read my last message"
+✨ MVP Features
+✔️ Upload Class Material
 
-### 4. Physical Accessibility
+Students can upload:
 
-Mode tailored for:
+PDFs
 
-- Tremors
-- Arthritis
-- Parkinson's
-- Stroke recovery
+Writeups
 
-Includes:
+Slides
 
-- Oversized UI
-- Dictation-only input
-- Avoids swiping/typing entirely
+Review packets
 
-## 👪 Family & Trusted Helper Support
+Typed notes
 
-### Why Family Access Matters
+✔️ Intelligent Study Extraction
 
-Many seniors need occasional help — forgetting passwords, missing notifications, or getting stuck navigating apps. EASY AI allows trusted relatives to help without physically being there.
+The AI:
 
-### Levels of Assistant Access
+Reads and understands the uploaded files
 
-**View Only**
+Detects important topics, definitions, formulas, and themes
 
-- Battery level
-- Missed calls / unread messages count
+Removes filler and duplicate information
 
-**Remote Assist (MVP)**
+Prioritizes what is most likely to be on a test
 
-- Send texts on senior's behalf
-- Turn volume/brightness up
-- Trigger call reminders
-- Send message reply suggestions
+✔️ Structured Teaching Plan
 
-**Full Remote Control (Future)**
+The system converts raw info into a clear lesson format:
 
-- Screen mirroring
-- Interactive touch control
-- Always clearly indicated to the senior
+Organized outline
 
-All actions are transparent and logged, maintaining user dignity and safety.
+Major concepts explained simply
 
-## 🔐 Safety & Consent
+Examples and model answers (if relevant)
 
-- Seniors manually approve helpers
-- Family added via one-time pairing code
-- Clear permissions toggles:
-  - View status
-  - Assist calls/messages
-  - Adjust device settings
-  - Optional location sharing
-- Every remote action displays a banner:
-  - "Emily is helping you right now."
-- Stop Help button instantly ends remote control
+Common mistakes to avoid
 
-## 🧩 System Components (High-Level)
+End-of-lesson summary
 
-### Senior App
+✔️ Animated Lesson Generation
 
-Runs on the user's phone:
+The platform writes and generates:
 
-- Voice commands
-- Oversized UI
-- Prompts + confirmations
-- Handles calls/messages/settings
+A friendly, conversational teaching script
 
-### Family App / Web Portal
+Scene-based 2D animation with simple characters
 
-Used by trusted helpers:
+Voice narration synced to visuals
 
-- Simple dashboard
-- Status indicators
-- Assist UI for replies/calls/settings
-- Secure role permissions
+On-screen captions + key callouts
 
-### AI Layer
+Result:
+A fun video that teaches the student only what they need to know.
 
-- Speech → Text
-- Intent → Actions
-- Natural confirmations
-- Optional device-side processing for safety
+✔️ Extra Study Resources
 
-## 🛠️ Proposed Tech Stack (Flexible)
+Along with the video, students receive:
 
-*Not required for prototype — included for future planning*
+A key-points cheat sheet
 
-| Component | Possible Tech |
-|-----------|---------------|
-| Frontend UI | Flutter / React Native |
-| Speech Recognition | Whisper, iOS/Android API |
-| Intent Routing | LLM (GPT), or fine-tuned model |
-| Phone Actions | OS APIs (Contacts, Calls, SMS, Settings) |
-| Family Portal | React + Firebase or Supabase |
-| Security | One-time pairing code, permissions flags |
+Optional auto-generated review questions
 
-## 🎨 Design Guidelines (for Figma)
+👥 Who It Helps
 
-- One giant action button per screen
-- Never more than 3–4 options
-- No long scrolls
-- Icons + text reinforcement
-- High contrast colors (navy, black, white)
-- Always provide spoken + visual feedback
+Middle school, high school, and college students
 
-### Figma Screens to Build
+Busy learners who cram before tests
 
-- Welcome / Onboarding
-- Add Trusted Helper (pairing code)
-- Home Screen — Speak Button
-- Listening / Processing UI
-- Confirm Action UI
-- Messages (simplified)
-- Settings (volume/brightness toggles only)
-- Family Dashboard
-- Remote Assist Send-Text Flow
-- Permission Management
+Teachers who want to make lessons more engaging
 
-## 🧱 Phase Roadmap
+Parents supporting at-home study
 
-### Phase 1 — Figma Prototype
+Students with ADHD or learning differences
 
-- UI for senior app
-- UI for family app
-- UX flow diagrams
-- Pitch deck
+Homeschool networks & tutoring centers
 
-### Phase 2 — Proof of Concept
+🛠️ Proposed Tech Stack
 
-- Voice command recognition
-- Routing to SMS/Call API
-- Basic remote assist via push or webhook
+AI Systems
 
-### Phase 3 — Production
+OCR to extract text from uploads
 
-- Full permissions system
-- Robust security and auditing
-- Offline fallback AI
+LLM-based summarization + topic modeling
 
-## 🌟 Why This Matters
+Script generation + rewriting
 
-### Seniors:
+TTS for natural synthetic voiceover
 
-- Stay independent longer
-- Avoid technology frustration
-- Stay connected with family
-- Reduce loneliness and isolation
+Video Engine
 
-### Families:
+Simple 2D characters
 
-- Worry less
-- Can help instantly without driving over
-- Keep their loved ones safe and reachable
+Scene templates and backgrounds
 
-### Healthcare + Social Impact:
+Motion timing synced to narration
 
-- Supports aging-in-place
-- Reduces caregiver burden
-- Scales to millions across the world
+Text overlays and highlights
 
-## 🤝 Team + Challenge Focus
+Frontend
 
-This project is built for a social impact challenge with an AI-first approach. We aim to show:
+File upload flow
 
-- Empathy-driven UX
-- Real-world utility
-- Extendability beyond the hackathon
-- Clear path from prototype → MVP → real users
+Progress indicator
 
-## 📬 Want to Contribute?
+Video viewer + download
 
-Open issues for:
+Optional user login profiles
 
-- UX ideas
-- Accessibility needs
-- Remote assist experiences
-- Safety concerns
-- Legal/regulatory prep
+📦 Minimum Viable Product Scope
+
+The MVP focuses on:
+
+Single file upload
+
+Extracting key ideas from the source
+
+Generating a script
+
+Creating a slide-style animated video
+
+Returning the final file + key takeaways
+
+No music, quizzes, custom avatars, or multi-subject libraries required in V1.
+
+🧭 Future Expansion Ideas
+
+Character selection
+
+Multiple voices / personalities
+
+Interactive quiz segments
+
+Teacher dashboards
+
+Class note libraries
+
+Support for multi-file input
+
+Subject-specific optimizations
+
+Gamification and rewards
+
+Mobile app
+
+Shared study pools between students
+
+⚠️ Licensing + Safety
+
+All visuals and voices must be original or licensed
+
+No copyrighted characters or voices from shows or movies
+
+Uploaded notes must be handled securely and privately
+
+Educational use first, commercial use later
+
+💡 Big Picture Vision
+
+Learning should feel:
+
+Fun
+
+Personalized
+
+Easier to digest
+
+Built for how students actually pay attention
+
+This project aims to turn studying into something that feels like entertainment — without losing rigor or accuracy.
+
+🤝 Contributing
+
+This is an evolving early-stage concept.
+Open to collaborators interested in:
+
+Machine learning
+
+Animation pipelines
+
+UI/UX design
+
+Curriculum design
+
+Education-forward product thinking
+
+Pull requests welcome.
+
+📬 Contact
+
+Open an issue or comment in discussions if you:
+
+Want to contribute
+
+Have feature ideas
+
+Want to join development
